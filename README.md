@@ -1,2 +1,1 @@
-# adopt-adog
-WDD330 Final Project
+# Adopt a Dog

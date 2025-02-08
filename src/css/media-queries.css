@@ -1,0 +1,22 @@
+@media screen and (min-width: 480px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header__nav {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  .main-header__nav a:hover {
+    background-color: unset;
+    color: #2a6b91;
+  }
+
+  .main-header__menu-open {
+    display: none;
+  }
+
+}

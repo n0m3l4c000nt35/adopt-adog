@@ -1,0 +1,16 @@
+{
+  "name": "adopt-adog",
+  "version": "0.0.0",
+  "description": "Web to adopt dogs",
+  "main": "main.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
+  },
+  "author": "Esteban Zárate",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.0.5"
+  }
+}
