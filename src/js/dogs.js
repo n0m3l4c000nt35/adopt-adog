@@ -23,10 +23,11 @@ async function dogTemplate(dog) {
 }
 
 export default class Dogs {
-  constructor(data) {
-    this.data = data;
+  constructor() {
+    this.data = [];
   }
-  init() {
+  async init() {
+    await this.getDogs();
     this.renderDogs();
     document.addEventListener("click", (event) => {
       if (event.target.matches("button[data-dogid]")) {
@@ -35,6 +36,9 @@ export default class Dogs {
         this.renderDogs();
       }
     });
+  }
+  async getDogs() {
+    this.data = await getData(BASE_URL, "breeds?limit=10");
   }
   renderDogs() {
     const parentElement = getElementHTML("#main-section");

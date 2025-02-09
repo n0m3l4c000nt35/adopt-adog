@@ -1,10 +1,9 @@
-import { BASE_URL, getData, getElementHTML, renderHeaderFooter } from "./utils";
+import { getElementHTML, renderHeaderFooter } from "./utils";
 import Dogs from "./dogs";
 
 renderHeaderFooter();
 
-const dogsData = await getData(BASE_URL, "breeds?limit=10")
-const dogs = new Dogs(dogsData);
+const dogs = new Dogs();
 dogs.init();
 
 document.addEventListener("click", e => {
